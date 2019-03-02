@@ -10,7 +10,7 @@
           @foreach($group->users as $user)
               <tr>
                   <td>{{$user->name}}</td>
-                  <td>{{$percent * 100 . '%'}}</td>
+                  <td>{{(isset($user->weightLogs()->get()[1]) ? Auth::user()->weightLogs()->get()[0]['weight'] / $user->weightLogs()->get()[1]['weight'] * 100: 0)}}</td>
                   <td>{{$user->workOutLogs()->first()['length']}}</td>
               </tr>
           @endforeach
