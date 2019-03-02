@@ -11404,3 +11404,9 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+.title-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
