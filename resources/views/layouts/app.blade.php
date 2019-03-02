@@ -47,7 +47,7 @@
             </div>
         </nav>
         <div class="section">
-            <div class="container">
+            <div class="container" id="background">
                 @yield('content')
             </div>
         </div>

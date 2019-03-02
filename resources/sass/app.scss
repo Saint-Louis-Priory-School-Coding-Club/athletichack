@@ -26,6 +26,15 @@
     padding-left:50px;
 }
 
+.top-bottom-padding{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.top-padding{
+    padding-top:40px;
+}
+
 .indent{
     padding-left:50px;
 }
@@ -59,4 +68,8 @@ html{
     margin-bottom: 5px;
     //display: block;
 
+}
+
+.no-select{
+    user-select: none;
 }
