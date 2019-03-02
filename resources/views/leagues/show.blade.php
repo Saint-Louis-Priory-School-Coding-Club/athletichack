@@ -7,16 +7,13 @@
         <th>Last Week Exercise Count (Min)</th>
       </thead>
       <tbody>
-          <tr>
-              <td>test</td>
-              <td>test</td>
-              <td>test</td>
-          </tr>
-          <tr>
-              <td>test</td>
-              <td>test</td>
-              <td>test</td>
-          </tr>
+          @foreach($group->users as $user)
+              <tr>
+                  <td>{{$user->name}}</td>
+                  <td>test</td>
+                  <td>test</td>
+              </tr>
+          @endforeach
       </tbody>
     </table>
 @endsection
