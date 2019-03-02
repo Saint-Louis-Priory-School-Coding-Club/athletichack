@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <div class="columns">
     <div class="column is-half is-offset-3">
         <h1 class="title has-text-centered">Your Leagues</h1>

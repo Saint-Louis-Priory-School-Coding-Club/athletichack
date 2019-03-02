@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <h1 class="title">Chat</h1>
 <hr>
 <div class="columns">

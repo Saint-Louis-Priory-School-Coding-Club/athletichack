@@ -11422,6 +11422,15 @@ label.panel-block:hover {
   padding-left: 50px;
 }
 
+.top-bottom-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.top-padding {
+  padding-top: 40px;
+}
+
 .indent {
   padding-left: 50px;
 }
@@ -11450,5 +11459,12 @@ html {
 .text-message-to {
   padding: 5px;
   margin-bottom: 5px;
+}
+
+.no-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
