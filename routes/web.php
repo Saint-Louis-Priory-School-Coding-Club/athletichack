@@ -13,20 +13,23 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('guest');
 
-Route::view('/createLeague','createLeague');
+Route::get('/leagues/{id}/view','LeaguesController@show');
 
-Route::view('/shareLeague','shareLeague');
+// Not working
+Route::get('/leagues/{id}/chat','LeaguesController@showChat');
 
-Route::view('/logWorkout','logWorkout');
+Route::get('/leagues/create','LeaguesController@create');
+Route::post('/leagues/create', 'LeaguesController@store');
 
-Route::view('/logWeight', 'logWeight');
+//Route::get('/leagues/share','LeaguesController@share');
 
-Route::view('/leagueChat','leagueChat');
+//Route::view('/logWorkout','logWorkout');
 
-Route::view('/viewLeague','viewLeague');
+//Route::view('/logWeight', 'logWeight');
 
 Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -30,13 +30,17 @@
                 @if (Auth::check())
                     <div class="navbar-start">
                         <a class="navbar-item" href="/">Home</a>
-                    </div>
-                @else
-                    <div class="navbar-end">
-                        <a class="navbar-item" href="/login">Login</a>
-                        <a class="navbar-item" href="/register">Register</a>
+                        <a class="navbar-item" href="/leagues/create">Create League</a>
                     </div>
                 @endif
+                    <div class="navbar-end">
+                        @if (Auth::check())
+                            <a class="navbar-item" href="/logout">Logout</a>
+                        @else
+                            <a class="navbar-item" href="/login">Login</a>
+                            <a class="navbar-item" href="/register">Register</a>
+                        @endif
+                    </div>
             </div>
         </nav>
         <div class="section">
