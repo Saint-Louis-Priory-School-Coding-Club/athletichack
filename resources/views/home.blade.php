@@ -8,7 +8,7 @@
         @foreach (Auth::user()->groups as $group)
             <div class="card">
                 <div class="card-header">
-                    <a href="/leagues/1/view" class="card-header-title">{{$group->name}}</a>
+                    <a href="/leagues/{{$group->id}}/view" class="card-header-title">{{$group->name}}</a>
                 </div>
             </div>
         @endforeach

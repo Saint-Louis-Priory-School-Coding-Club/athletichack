@@ -34,6 +34,7 @@
                         <a class="navbar-item" href="/">Home</a>
                         <a class="navbar-item" href="/leagues/create">Create League</a>
                         <a class="navbar-item" href="/leagues/join">Join League</a>
+                        <a class="navbar-item" href="/log/weight">Logs</a>
                     </div>
                 @endif
                     <div class="navbar-end">

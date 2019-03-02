@@ -1,3 +1,4 @@
+@extends('layouts.app')
 @section("content")
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <div class="card rounded-corner is-borderless">
@@ -8,9 +9,10 @@
         </div>
     </div>
 
-    <div class="columns is-centered">
-        <div class="column">
-            <h2 class="subtitle indent is-1 center">2AFC4MC</h2>
+        <div class="columns is-centered">
+            <div class="column">
+                <h2 class="subtitle indent is-1 center">{{$league->code}}</h2>
+            </div>
         </div>
     </div>
 

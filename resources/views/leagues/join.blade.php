@@ -7,11 +7,18 @@
         <h1 class="title is-1">Join a League </label>
     </div>
 
-    <form action="/leagues/join" method="post">
-
-        <div class="field is-horizontal">
-            <div class="field-label">
-                <label class="label">Join Code: </label>
+        <form action="/leagues/join" method="post">
+            @csrf
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <label class="label">Join Code: </label>
+                </div>
+                <div class="control field-body">
+                    <input name="code" class="input" type="text" placeholder="Code Input">
+                </div>
+                <div class="field-label">
+                    <!--spacing-->
+                </div>
             </div>
             <div class="control field-body">
                 <input class="input" type="text" placeholder="Code Input">
