@@ -11410,3 +11410,40 @@ label.panel-block:hover {
   align-items: center;
 }
 
+.title-border {
+  padding: 20px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text-border {
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.indent {
+  padding-left: 50px;
+}
+
+.rounded-corner {
+  border-radius: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-element {
+  display: flex;
+  justify-content: center;
+}
+
+.cyan {
+  background-color: #209cee;
+}
+
+html {
+  background-color: #f2f2f2;
+}
+
