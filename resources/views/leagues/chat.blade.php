@@ -7,12 +7,12 @@
     <div id="chat" class="column is-6 is-offset-3">
         <div class="level" id="messages">
             <div class="level">
-                <div class="level-right">
+                <div class="level-left">
                     <div class="level-item text-message-to">to</div>
                 </div>
             </div>
             <div class="level">
-                <div class="level-left">
+                <div class="level-right">
                     <div class="">from</div>
                 </div>
             </div>
