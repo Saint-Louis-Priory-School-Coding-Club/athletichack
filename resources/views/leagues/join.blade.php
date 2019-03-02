@@ -13,7 +13,7 @@
                     <label class="label">Join Code: </label>
                 </div>
                 <div class="control field-body">
-                    <input class="input" type="text" placeholder="Code Input">
+                    <input name="code" class="input" type="text" placeholder="Code Input">
                 </div>
                 <div class="field-label">
                     <!--spacing-->

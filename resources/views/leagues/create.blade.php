@@ -7,13 +7,13 @@
         </div>
 
         <form action="/leagues/create" method="post">
-
+            @csrf
             <div class="field is-horizontal">
                 <div class="field-label">
                     <label class="label">Name: </label>
                 </div>
                 <div class="control field-body">
-                    <input class="input" type="text" placeholder="Text Input">
+                    <input name="name" class="input" type="text" placeholder="Text Input">
                 </div>
                 <div class="field-label">
                     <!--spacing-->
@@ -25,7 +25,7 @@
                     <label class="label">End Date: </label>
                 </div>
                 <div class="control field-body">
-                    <input class="input" type="date" placeholder="Text Input">
+                    <input name="date" class="input" type="date" placeholder="Text Input">
                 </div>
                 <div class="field-label">
                     <!--spacing-->
