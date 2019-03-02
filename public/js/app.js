@@ -11259,7 +11259,7 @@ function load() {
 
   // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
   if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).DEBUG;
+    r = Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).DEBUG;
   }
 
   return r;
@@ -44847,7 +44847,7 @@ function load() {
 
   // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
   if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).DEBUG;
+    r = Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).DEBUG;
   }
 
   return r;
@@ -46063,7 +46063,7 @@ function load() {
 
   // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
   if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).DEBUG;
+    r = Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}).DEBUG;
   }
 
   return r;
@@ -58903,7 +58903,7 @@ if ($('#chat').length) {
     if ($('#m').val()) {
       socket.emit('chat message', $('#m').val());
       $('#messages').append($('<br>'));
-      $('#messages').append($('<div class="text-message-to">').text($('#m').val()));
+      $('#messages').append($('<div class="text-message-to level level-right card rounded-corner">').text($('#m').val()));
       $('#messages').append($('<br>'));
       $('#m').val('');
     }
@@ -58911,7 +58911,7 @@ if ($('#chat').length) {
     return false;
   });
   socket.on('chat message', function (msg) {
-    $('#messages').append($('<div class="text-message-from">').text(msg));
+    $('#messages').append($('<div class="text-message-from level level-right card rounded-corner">').text(msg));
     $('#messages').append($('<br>'));
   });
 }
@@ -59063,8 +59063,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/alexwasinger/Sites/hackathon/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/alexwasinger/Sites/hackathon/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\athetichack\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\athetichack\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ }),

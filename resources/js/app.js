@@ -66,7 +66,7 @@ if ($('#chat').length) {
 		if ($('#m').val()) {
 			socket.emit('chat message', $('#m').val());
 			$('#messages').append($('<br>'));
-			$('#messages').append($('<div class="text-message-to">').text($('#m').val()));
+			$('#messages').append($('<div class="text-message-to level level-right card rounded-corner">').text($('#m').val()));
 			$('#messages').append($('<br>'));
 			$('#m').val('');
 		}
@@ -74,7 +74,7 @@ if ($('#chat').length) {
 	});
 
 	socket.on('chat message', function(msg) {
-		$('#messages').append($('<div class="text-message-from">').text(msg));
+		$('#messages').append($('<div class="text-message-from level level-right card rounded-corner">').text(msg));
 		$('#messages').append($('<br>'));
 	});
 }

@@ -8,12 +8,20 @@
         <div class="level" id="messages">
             <div class="level">
                 <div class="level-left">
-                    <div class="level-item text-message-to">to</div>
+                    <div class="card rounded-corner">
+                        <div class="margin">
+                            to
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="level">
                 <div class="level-right">
-                    <div class="">from</div>
+                    <div class="card rounded-corner">
+                        <div class="margin">
+                            From
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
