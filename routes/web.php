@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('/createLeague','createLeague');
+
+Route::view('/shareLeague','shareLeague');
+
+Route::view('/logWorkout','logWorkout');
+
+Route::view('/logWeight', 'logWeight');
+
+Route::view('/leagueChat','leagueChat');
+
+Route::view('/viewLeague','viewLeague');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
