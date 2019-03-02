@@ -10,8 +10,8 @@
           @foreach($group->users as $user)
               <tr>
                   <td>{{$user->name}}</td>
-                  <td>test</td>
-                  <td>test</td>
+                  <td>{{$percent * 100 . '%'}}</td>
+                  <td>{{$user->workOutLogs()->first()['length']}}</td>
               </tr>
           @endforeach
       </tbody>

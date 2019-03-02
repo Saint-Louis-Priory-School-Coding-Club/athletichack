@@ -67,7 +67,9 @@ class LeaguesController extends Controller
     public function show($id)
     {
         $group = Group::find($id);
-        return view('leagues.show', compact('group'));
+        $percent = (isset(Auth::user()->weightLogs()->get()[1]) ? Auth::user()->weightLogs()->get()[0]['weight'] / Auth::user()->weightLogs()->get()[1]['weight'] : 0);
+        $percent = floor($percent);
+        return view('leagues.show', compact('group', 'percent'));
     }
 
     /**
