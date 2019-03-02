@@ -6,6 +6,7 @@
             <form class="form" action="/login" method="post">
                 @csrf
                 <h1 class="title">Login</h1>
+                <hr>
                 <div class="field">
                     <label class="label">Email</label>
                     <div class="control">

@@ -16,4 +16,5 @@
           @endforeach
       </tbody>
     </table>
+    <a class="button is-primary" href="/leagues/{{$group->id}}/chat">Enter League Chat</a>
 @endsection

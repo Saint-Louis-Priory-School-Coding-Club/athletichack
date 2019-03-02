@@ -6,6 +6,7 @@
             <form class="form" action="/register" method="post">
                 @csrf
                 <h1 class="title">Register</h1>
+                <hr>
                 <div class="field">
                     <label class="label">Name</label>
                     <div class="control">

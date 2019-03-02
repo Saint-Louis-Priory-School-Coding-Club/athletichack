@@ -57,3 +57,25 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 });
+
+if ($('#chat').length) {
+	var io = require('socket.io-client');
+	const socket = io('http://localhost:3000');
+
+	$('#chat-form').submit(function() {
+		if ($('#m').val()) {
+			socket.emit('chat message', $('#m').val());
+			$('#messages').append($('<br>'));
+			$('#messages').append($('<div class="text-message-to">').text($('#m').val()));
+			$('#messages').append($('<br>'));
+			$('#m').val('');
+		}
+		return false;
+	});
+
+	socket.on('chat message', function(msg) {
+		$('#messages').append($('<div class="text-message-from">').text(msg));
+		$('#messages').append($('<br>'));
+	});
+}
+
