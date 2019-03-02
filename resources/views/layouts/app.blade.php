@@ -15,6 +15,8 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" rel="stylesheet">
+        <link href="{{asset('css/mattie.css')}}" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar">
