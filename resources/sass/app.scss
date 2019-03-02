@@ -34,6 +34,10 @@
     border-radius:10px;
 }
 
+.margin{
+    margin:8px;
+}
+
 .center{
     text-align:center;
 }
@@ -52,10 +56,18 @@ html{
 }
 
 .text-message-to {
-    padding: 5px;
+    padding: 8px;
     //margin-right: 0;
     //float: right;
     //clear: both;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     //display: block;
+    justify-content: left;
 }
+
+.text-message-from{
+    margin-bottom: 8px;
+    padding: 8px;
+    justify-content: right;
+}
+

@@ -22,7 +22,7 @@
 
 
         <div class="center-element title-border">
-            <a href="/viewLeague">
+            <a href="/leagues/{{$league->id}}/view">
                 <button class="button is-primary" type="button">Return to League</button>
             </a>
         </div>
