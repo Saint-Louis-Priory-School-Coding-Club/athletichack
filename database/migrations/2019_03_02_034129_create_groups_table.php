@@ -17,6 +17,7 @@ class CreateGroupsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->date('date');
+            $table->integer('code');
             $table->timestamps();
         });
     }

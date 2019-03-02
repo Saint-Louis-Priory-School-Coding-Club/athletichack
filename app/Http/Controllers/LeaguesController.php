@@ -45,10 +45,15 @@ class LeaguesController extends Controller
             'date' => 'date|required',
         ]);
 
-        Group::create([
+        $group = new Group([
             'name' => $request->name,
-            'date' => $request->date
+            'date' => $request->date,
+            'code' => mt_rand(100000, 999999),
         ]);
+
+        $group->save();
+
+        Auth::user()->groups()->attach($group);
 
         return redirect('/');
     }
@@ -103,11 +108,22 @@ class LeaguesController extends Controller
         return view('leagues.chat');
     }
 
-    public function share(Group $id) {
-        return view('leagues.share');
+    public function share(Group $league) {
+        return view('leagues.share', compact('league'));
     }
 
     public function join() {
         return view('leagues.join');
+    }
+
+    public function joinLeague(Request $request) {
+        $request->validate([
+            'code' => 'integer|required',
+        ]);
+
+        $league = Group::where('code', $request->code)->get();
+        Auth::user()->groups()->attach($league);
+
+        return redirect('/');
     }
 }

@@ -17,4 +17,5 @@
       </tbody>
     </table>
     <a class="button is-primary" href="/leagues/{{$group->id}}/chat">Enter League Chat</a>
+    <a class="button is-primary" href="/leagues/{{$group->id}}/share">Share League</a>
 @endsection

@@ -7,7 +7,7 @@
         </div>
 
         <form action="/leagues/join" method="post">
-
+            @csrf
             <div class="field is-horizontal">
                 <div class="field-label">
                     <label class="label">Join Code: </label>

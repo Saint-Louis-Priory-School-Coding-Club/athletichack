@@ -24,16 +24,18 @@ Route::post('/leagues/create', 'LeaguesController@store');
 
 Route::get('/leagues/join', 'LeaguesController@join');
 
-//Route::view('/log', 'HomeController@log');
 Route::get('/log/weight', 'HomeController@logWeight');
 Route::post('/log/weight', 'HomeController@storeWeight');
 
 Route::get('/log/exercise', 'HomeController@logExercise');
 Route::post('/log/exercise', 'HomeController@storeExercise');
 
+Route::get('/leagues/{league}/share','LeaguesController@share');
+
+Route::post('/leagues/join', 'LeaguesController@joinLeague');
+
 //Route::view('/log', 'logWorkout');
 
-//Route::get('/leagues/share','LeaguesController@share');
 
 //Route::view('/logWorkout','logWorkout');
 
