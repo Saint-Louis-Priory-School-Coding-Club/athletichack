@@ -23,6 +23,12 @@ Route::get('/leagues/{id}/chat','LeaguesController@showChat');
 Route::get('/leagues/create','LeaguesController@create');
 Route::post('/leagues/create', 'LeaguesController@store');
 
+Route::get('/leagues/join', 'LeaguesController@join');
+
+Route::view('/logweight', 'logWeight');
+
+Route::view('/logworkout', 'logWorkout');
+
 //Route::get('/leagues/share','LeaguesController@share');
 
 //Route::view('/logWorkout','logWorkout');

@@ -33,6 +33,7 @@
                     <div class="navbar-start">
                         <a class="navbar-item" href="/">Home</a>
                         <a class="navbar-item" href="/leagues/create">Create League</a>
+                        <a class="navbar-item" href="/leagues/join">Join League</a>
                     </div>
                 @endif
                     <div class="navbar-end">

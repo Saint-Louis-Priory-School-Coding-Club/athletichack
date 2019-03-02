@@ -106,4 +106,8 @@ class LeaguesController extends Controller
     public function share(Group $id) {
         return view('leagues.share');
     }
+
+    public function join() {
+        return view('leagues.join');
+    }
 }
