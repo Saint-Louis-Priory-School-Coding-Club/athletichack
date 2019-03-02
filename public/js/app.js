@@ -58898,7 +58898,7 @@ document.addEventListener('DOMContentLoaded', function () {
 if ($('#chat').length) {
   var io = __webpack_require__(/*! socket.io-client */ "./node_modules/socket.io-client/lib/index.js");
 
-  var socket = io('http://localhost:3000');
+  var socket = io('https://stark-plains-74644.herokuapp.com:3000');
   $('#chat-form').submit(function () {
     if ($('#m').val()) {
       socket.emit('chat message', $('#m').val());
