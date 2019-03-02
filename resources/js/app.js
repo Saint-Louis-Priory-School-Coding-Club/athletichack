@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 if ($('#chat').length) {
 	var io = require('socket.io-client');
-	const socket = io('https://stark-plains-74644.herokuapp.com:3000');
+    const socket = io('http://localhost:3000');
 
 	$('#chat-form').submit(function() {
 		if ($('#m').val()) {
