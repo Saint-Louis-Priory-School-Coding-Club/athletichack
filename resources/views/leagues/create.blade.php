@@ -31,25 +31,6 @@
             <div class="field-label">
                 <!--spacing-->
             </div>
-            </div>
-            <div class="control field-body">
-                <input class="input" type="text" placeholder="Text Input">
-            </div>
-            <div class="field-label">
-                <!--spacing-->
-            </div>
-        </div>
-
-        <div class="field is-horizontal">
-            <div class="field-label">
-                <label class="label">End Date: </label>
-            </div>
-            <div class="control field-body">
-                <input class="input" type="date" placeholder="Text Input">
-            </div>
-            <div class="field-label">
-                <!--spacing-->
-            </div>
         </div>
 
         <div class="title-border">
